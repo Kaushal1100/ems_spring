@@ -20,13 +20,13 @@ import com.example.emsspringbackend.service.EmployeeService;
 import lombok.AllArgsConstructor;
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/employees")
 @AllArgsConstructor
 public class EmployeeController {
 	private EmployeeService employeeService;
 	
 	//Build Add Employee API
-	@PostMapping("newemployee")
+	@PostMapping("/newemployee")
 	public ResponseEntity<EmployeeDto> createEmployee(@RequestBody EmployeeDto employeeDto){
 		EmployeeDto savedEmployee=employeeService.createEmployee(employeeDto);
 		return new ResponseEntity<>(savedEmployee,HttpStatus.CREATED);

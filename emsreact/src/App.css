@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.navbar {
+  background-color: #17e470; /* Dark background for the navbar */
+  width: 100%;            /* Ensure the navbar spans the entire width */
+}
+.button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.employee-section {
+  width: 80%; /* Adjust width as needed */
+  margin: auto; /* Center the section */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.employee-header {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-employee-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px; /* Adds space between button and table */
+}
+.form {
+  
+  display: flex;
+  flex-direction: column;
+}
+.form-heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.form-container {
+  width: 450px; /* Adjust width */
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer {
+  background-color: #333; /* Dark background */
+  color: white;           /* White text */
+  text-align: center;     /* Center the text */
+  padding: 10px 0;        /* Some space inside the footer */
+  position: fixed;        /* Fix it to the bottom of the page */
+  left: 0;                /* Align it to the left */
+  bottom: 0;              
+  width: 100%;            
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
+
